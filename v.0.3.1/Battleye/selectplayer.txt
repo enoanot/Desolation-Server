@@ -1,0 +1,2 @@
+//new
+1 "" !="C_man_p_beggar_F" !"C_man_p_beggar_F"

@@ -1,0 +1,1 @@
+(currentVisionMode player == 1)

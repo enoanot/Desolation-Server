@@ -1,0 +1,105 @@
+//--- DATABASE ENTRIES (edit this)
+DB_WorldUUID = "0x11e71379043c8906833008626681de3d";
+DB_PoolSize = 5;
+//--- END DATABASE ENTRIES
+
+
+
+
+
+author = "DesolationREDUX";
+enableDebugConsole = 1;
+onLoadName = "Desolation";
+onLoadMission = "Desolation Redux";
+joinUnassigned = false;
+disabledAI = true;
+disableChannels[]={0,2,6};
+corpseManagerMode = 3;
+loadScreen =  "\dsr_ui\Assets\logo.paa";
+
+
+
+
+respawnDialog = 0;
+respawn = 3;
+respawnDelay = 18000;
+respawnButton = 0;
+
+class Header
+{
+	gameType = Sandbox;
+	minPlayers = 1;
+	maxPlayers = 120;
+};
+
+wreckLimit = 3000;
+wreckRemovalMinTime = 5000;
+wreckRemovalMaxTime = 5000;
+corpseLimit = 1000;
+corpseRemovalMinTime = 20;
+corpseRemovalMaxTime = 25;
+minPlayerDistance = 30;
+debriefing = 0;
+
+
+showHUD[] = {
+	true,	// Scripted HUD (same as showHUD command)
+	true,	// Vehicle + soldier info
+	false,	// Vehicle radar [HIDDEN]
+	false,	// Vehicle compass [HIDDEN]
+	false,	// Tank direction indicator
+	true,	// Commanding menu
+	false,	// Group Bar
+	true	// HUD Weapon Cursors
+};
+
+class CfgFunctions
+{
+	class PluginMaster {
+		tag = "BASE";
+		class Functions {
+			file = "PluginMaster";
+			class init {};
+			class receiveFunctions {};
+			class receiveProgressData {};
+			class timeoutCheck {};
+			class start {};
+			class addEvents {};
+		};
+	};
+};
+
+
+class RscTitles
+{
+	class background {
+		idd = 7331;
+		fadein = 0;
+		fadeout = 2;
+		name="background";
+		duration = 1e10;
+		class Controls {
+			class PictureBackground
+			{
+				//--- TODO: add the rest of the errors
+				type=0;
+				font="TahomaB";
+				style=48;
+				shadow = 0;
+				colorBackground[] = {0,0,0,1};
+				colorText[] = {1,1,1,1};
+				tooltipColorText[] = {1,1,1,1};
+				tooltipColorBox[] = {1,1,1,1};
+				tooltipColorShade[] = {0,0,0,0.65};
+				tooltip = "";
+				idc = -1;
+				sizeEx = 0.1;
+				text = "background.paa";
+				x = "safezoneX";
+				y = "safezoneY";
+				w = "safezoneW";
+				h = "safezoneH";
+			};
+		};
+	};
+};

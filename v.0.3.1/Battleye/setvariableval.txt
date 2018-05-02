@@ -1,0 +1,3 @@
+//new
+1 "svar" !="svar_timedstates" !="svar_ds_var_hunger"
+1 "pvar"

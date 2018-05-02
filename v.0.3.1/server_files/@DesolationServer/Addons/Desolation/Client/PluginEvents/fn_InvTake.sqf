@@ -1,0 +1,1 @@
+[player,["Take",50]] remoteExec ["say3D",allPlayers];
